@@ -1,0 +1,32 @@
+{
+  "name": "webora-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node ./dist/index.mjs",
+    "db:push": "drizzle-kit push",
+    "dev": "node --watch --enable-source-maps ./dist/index.mjs"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5",
+    "pg": "^8.20.0",
+    "pino": "^9",
+    "pino-http": "^10",
+    "resend": "^6.12.3",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/node": "^22",
+    "@types/pg": "^8",
+    "drizzle-kit": "^0.30.4",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7"
+  }
+}
